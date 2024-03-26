@@ -1,0 +1,143 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
+}
+
+.home_page,
+.page_2 {
+
+   background-color: #000;
+   color: #fff;
+   width: 100%;
+   height: 80vh;
+}
+
+.home_page nav {
+   width: 80%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 0 auto;
+   padding: 18px 0px;
+   border-bottom: 1px solid silver;
+}
+
+.logo span {
+   font-size: 35px;
+   color: cyan;
+   font-weight: 600;
+}
+
+.nav_items ul {
+   display: flex;
+   gap: 50px;
+   align-items: center;
+}
+
+.nav_items ul li,
+.home_page nav h5 {
+   list-style: none;
+   text-transform: uppercase;
+}
+
+
+
+.home_content {
+   display: flex;
+   justify-content: space-around;
+   width: 80%;
+   margin: 0 auto;
+   padding: 70px 0px;
+}
+
+.home_content section {
+   width: 49%;
+}
+
+.home_content section h1 {
+   font-size: 85px;
+   text-transform: uppercase;
+}
+
+.right {
+   align-items: center;
+   justify-content: right;
+   display: flex;
+   overflow: hidden;
+}
+
+.right img {
+   width: 85%;
+   background-size: cover;
+   border-radius: 4px;
+}
+
+.img_1,
+.img_2 {
+   width: 80px;
+   height: 75px;
+   border-radius: 50px;
+   margin-top: 10px;
+
+}
+
+.img_2 {
+   margin-left: -35px;
+}
+
+
+/* page two */
+.page_2 {
+   height: 100vh !important;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.box {
+   width: 80%;
+   margin: 0 auto;
+   padding: 80px 0px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 50px;
+}
+
+.boxes {
+   text-align: justify;
+   padding: 40px;
+   border-radius: 5px;
+   border: 1px solid silver;
+   cursor: pointer;
+}
+
+.boxes p {
+   padding-top: 12px;
+}
+
+@media only screen and (max-width:780px) {
+   .home_content {
+      flex-direction: column;
+   }
+
+   .home_page,
+   .page_2 {
+      height: auto;
+      padding: 40px 0px;
+   }
+
+   .home_content section {
+      width: 100%;
+   }
+   .right {
+      justify-content: left;
+      margin-top: 40px;
+   }
+   .box {
+      flex-wrap: wrap;
+   }
+
+}
